@@ -2,8 +2,8 @@
 A small (very small at the moment) collection of OSINT and security hacks using a Programmable Search Engine and Custom Search API from Google.  Many of these are featured in tutorials or other articles on https://technicalciso.com.
 
 
-* For information on Google Programmable Search Engine, see https://developers.google.com/custom-search?hl=en
-* For information on Google Custom Search API, see https://developers.google.com/custom-search/v1/overview
+* For info on Google Programmable Search Engine, see https://developers.google.com/custom-search?hl=en
+* For info on Google Custom Search API, see https://developers.google.com/custom-search/v1/overview
 
 
 This repo includes:
