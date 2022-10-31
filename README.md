@@ -3,9 +3,9 @@ A small (very small at the moment) collection of OSINT and security hacks using 
 
 This repo includes:
  1. Flashfinder
-
-For information on Google Programmable Search Engine, see https://developers.google.com/custom-search?hl=en
-For information on Google Custom Search API, see https://developers.google.com/custom-search/v1/overview
+ 
+* For information on Google Programmable Search Engine, see https://developers.google.com/custom-search?hl=en
+* For information on Google Custom Search API, see https://developers.google.com/custom-search/v1/overview
 
 ---
 ## Flashfinder
