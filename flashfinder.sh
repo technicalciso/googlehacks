@@ -1,12 +1,12 @@
 #!/bin/bash
 ############################################################################
 #flashfinder.sh  (find instances of Adobe Flash on website)                #
-#version 1.0                                                               #
+#version 1.2 (Oct 2022) / original Dec 2019                                #
 # by Ely Pinto technicalciso.com                                           #
 ############################################################################
 
-APIKEY="" #your google api key here
-CXID="" #your google search engine ID here
+CXID="" #your google programmable search engine ID here
+APIKEY="" #your google custom search API key here
 FLASHTEXT="%20flash%20player" #search text for Flash, other options exist
 
 set -a
@@ -18,7 +18,7 @@ XARGS=/usr/bin/xargs
 
 #no more changes
 function confirmlink {
-        $CURL $1 | $GREP -i swf > /dev/null 2>&1 && echo "flash confirmed: $1" || echo "flash not found (could be old cache): $1"
+        $CURL $1 | $GREP -i swf > /dev/null 2>&1 && echo "flash confirmed: $1" || echo "listed (flash not found, could be old cache): $1" 
 }
 set +a
 
@@ -28,7 +28,7 @@ then
         exit 1
 elif  [[ "$1" =~ " " ]] #spaces break our curl #TODO
 then
-        echo "Spaces not allowed in site"
+        echo "Spaces not allowed in site" 
         exit 1
 fi
 
