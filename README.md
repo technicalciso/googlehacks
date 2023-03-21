@@ -15,6 +15,8 @@ This script uses Google to search for Adobe Flash on a website. Results are indi
 ```
 ./flashfinder.sh <site>
 ```
+NOTE: Currently, this script only returns the first 10 results.  This will be fixed eventually (in the meantime, see Neganews.sh for looping methodology to retrieve all search results).
+
 ## Neganews
 This script uses Google to search for adverse (negative) news about a company or group of companies.  For each company, a Google search is conducted together with any of the keywords defined, such as _breach_ or _DDOS_. To use Neganews, create a file with company names, a file with keywords to search for. Download a copy and run
 ```
